@@ -1,0 +1,296 @@
+:root {
+    --biru: #4c5fd5;
+    --hitam: #252525;
+    --putih: #f8f9fa; 
+    --abu: #dadbf1;
+}
+
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    transition: all .3s linear;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    padding: 10px 32px;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--biru);
+    color: var(--putih);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--putih);
+    color: var(--hitam);
+}
+
+.btn_sd {
+    padding: 10px 32px;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--hitam);
+    color: var(--putih);
+    text-decoration: none;
+    border: 1px solid var(--putih);
+}
+
+.btn_sd:hover {
+    background-color: var(--putih);
+    color: var(--hitam);
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+/* ================= header ================ */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    background-color: var(--hitam);
+    padding: 3rem 9%;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logo i {
+    font-size: 3rem;
+    color: var(--putih);
+}
+
+header .logo h1 {
+    font-size: 24px;
+    color: var(--putih);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header .logo a {
+    font-size: 24px;
+    color: var(--putih);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: .5rem;
+}
+
+header .logo a:hover {
+    border-bottom: 1px solid var(--putih);
+}
+
+header .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ======================= HELP =============== */
+#help {
+    width: 100%;
+    height: 65vh;
+    margin-top: 54px;
+    background-color: var(--abu);
+}
+
+#help .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#help .help h1 {
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#help .help .type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#help .help .type i {
+    background-color: var(--biru);
+    border-radius: .3rem;
+    margin-left: .7rem;
+    padding: 1rem;
+    color: var(--putih);
+    font-size: 24px;
+}
+
+#help .help .type input {
+    height: 3.5rem;
+    width: 40rem;
+    font-size: 20px;
+    padding: 1rem;
+    font-weight: 400;
+    border: .5px solid var(--hitam);
+    border-radius: .3rem;
+    box-shadow: 0 9px 14px 0 rgb(0 0 0 / 10%);
+}
+
+#help .help .type input[type="text"]:focus{
+    border: .5px solid var(--biru);
+    outline: none;
+}
+
+/* ===================================== CHOOSEE ============== */
+#choose {
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+}
+
+#choose .choose {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    gap: 4rem;
+}
+
+#choose .choose .card {
+    width: 536px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    text-align: justify;
+}
+
+#choose .choose .card .int {
+    width: 25%;
+}
+
+#choose .choose .card .int img {
+    width: 100%;
+}
+
+#choose .choose .card .init h1 {
+    font-size: 24px;
+    font-family: 'GT America Standard', sans-serif;
+    margin-bottom: 20px;
+}
+
+#choose .choose .card .init p {
+    font-size: 22px;
+    color: var(--hitam);
+    font-family: '[GT America Standard]', sans-serif;
+    opacity: 0.8;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+#choose .choose .card .init a {
+    text-transform: none;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#choose .choose .card .init {
+    gap: 1rem;
+    width: 75%;
+}
+
+
+/* ================ FOOTER =============== */
+#footer {
+    width: 100%;
+    overflow: hidden;
+    background: var(--hitam);
+    color: var(--putih);
+}
+
+#footer footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer footer .logo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#footer footer .wrap {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer footer .list {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer footer .list a {
+    text-transform: none;
+}
+
+#footer footer h1 {
+    font-size: 20px;
+}
+
+#footer footer .logo p {
+    width: 60%;
+}
+
+#footer footer .logo i {
+    font-size: 60px;
+    color: var(--abu);
+}
+
+#footer footer .logo p,
+#footer footer .list a {
+    color: var(--putih);
+    text-decoration: none;
+    margin-top: .3rem;
+    font-size: 12px;
+}
+
+#footer footer .list a.list-ctc {
+    color: #B69258;
+}
